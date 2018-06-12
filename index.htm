@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="brand animated fadeIn">
+            <span>Acme</span> Contact Form</h1>
+        <div class="wrapper animated zoomInUp">
+            <div class="company-info">
+                <h3>Acme Form</h3>
+                <ul>
+                    <li>
+                        <i class="fa fa-road"></i> 42 Silent Hill Street</li>
+                    <li>
+                        <i class="fa fa-phone"></i> (333) 555-555</li>
+                    <li>
+                        <i class="fa fa-envelope"></i> test@test.ts</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Email Us</h3>
+                <div class="alert">Your message has been sent!</div>
+                <form id="contactform">
+                    <p>
+                        <label for="name">Name</label>
+                        <input id="name" type="text" name="name" required>
+                    </p>
+
+                    <p>
+                        <label for="company">Company</label>
+                        <input id="company" type="text" name="company" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" required>
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" type="text" name="phone" required>
+                    </p>
+
+                    <p class="full">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" name="message"></textarea>
+                    </p>
+                    <p class="full">
+                        <button type="submit">Submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
